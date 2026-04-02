@@ -5,7 +5,10 @@
 
 html,
 body {
-  height: 100%;
+  height: auto !important;
+  min-height: 100%;
+  overflow-y: auto !important;
+  display: block !important; /* 解除可能的 flex 置中 */
 }
 
 body {
@@ -35,6 +38,8 @@ img {
   max-width: 420px;
   padding: 15px;
   margin: 0 auto;
+  height: auto !important;
+  /*padding-bottom: 50px; /* 給底部留一點空間，避免按鈕貼齊邊緣 */
 }
 
 .form-label-group {
